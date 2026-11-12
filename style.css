@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #f4f4f9;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --primary-color: #3b82f6;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+    color: #666666;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section {
+    background-color: var(--card-bg);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #999999;
+}
+
+#btn-tema {
+   margin-top: 15px;
+   padding: 8px 16px;
+   font-size: 14px;
+   cursor: pointer;
+   font-weight: bold;
+   border: none;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    transition: background-color 0.2s, color 0.1s;
+}
+
+#btn-tema:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+body.dark-theme {
+    --bg-color: #1e1e1e;
+    --card-bg: #2c2c2c;
+    --text-color: #f4f4f9;
+    --primary-color: #3b82f6;
+}
